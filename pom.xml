@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.110.88.159:9000/</sonar.host.url>
+		<sonar.host.url>http://3.108.238.21:9000/</sonar.host.url>
                 <sonar.login>9a0228fc1b507456660cf7ec5cc3a2de794f1533</sonar.login>
 		
              
@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.110.196.42:9966/manojk/repository/smarthealth-releases/</url>
+	      <url>http://3.110.51.151:9966/manojk/repository/smarthealth-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.110.196.42:9966/manojk/repository/smarthealth-snapshot/</url>
+	      <url>http://3.110.51.151:9966/manojk/repository/smarthealth-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
