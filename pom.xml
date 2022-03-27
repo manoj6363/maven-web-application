@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.110.51.151:9966/manojk/repository/smarthealth-releases/</url>
+	      <url>http://15.206.209.93:9966/manojk/repository/facebook-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.110.51.151:9966/manojk/repository/smarthealth-snapshot/</url>
+	      <url>http://15.206.209.93:9966/manojk/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
