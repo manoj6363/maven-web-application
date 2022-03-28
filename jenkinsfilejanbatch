@@ -12,9 +12,10 @@ stage('Build'){
 sh "$mavenHome/bin/mvn clean package"
 }
 
-//Genarate SonarQube Report
+//Generate SonarQube Report
 stage('SonarQubeReport'){
 sh "$mavenHome/bin/mvn sonar:sonar"
+}
 
 //Upload Artifact into Artifactory repo
 stage('UploadArtifactsIntoNexus'){
@@ -23,8 +24,8 @@ sh "$mavenHome/bin/mvn deploy"
 
 //Deploy App into Tomcat Server
 stage('DeployAppIntoTomcat'){
-sshagent(['34db21d3-6c58-4756-9639-ca75c823ed4f']) {
+sshagent(['34db21d3-6c58-4756-9639-ca75c823ed4f']) 
    sh "scp -0 StrictHostKeyChecking=no target/maven-web-application.war ec2-user@43.204.23.206:/opt/apache-tomcat-9.0.59/webapps"
 }
-}
+
 }//Node closing
